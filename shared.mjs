@@ -127,6 +127,8 @@ export function page({ design, title, styles, body, preview = true }) {
 <meta property="og:description" content="${META_DESC}">
 <meta property="og:type" content="website">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+${preview ? '<meta name="robots" content="noindex">' : '<link rel="canonical" href="https://bavlifyweb.com/">'}
 <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/jetbrains-mono.woff2">
 ${THEME_SCRIPT}
 <style>

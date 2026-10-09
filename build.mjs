@@ -76,6 +76,7 @@ const gallery = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${content.name} \u2014 choose a design</title>
 <meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 ${THEME_SCRIPT}
 <style>
 ${FONT_FACES}

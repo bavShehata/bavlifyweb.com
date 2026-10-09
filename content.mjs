@@ -154,7 +154,7 @@ export const content = {
   ],
 
   personal: [
-    "Padel and chess",
+    "Chess",
     "Online-privacy advocate",
     "Linux (EndeavourOS) tinkerer",
     "Learning Spanish",
@@ -162,7 +162,7 @@ export const content = {
 
   contact: {
     blurb:
-      "Up for a good engineering problem, a role, or a game of padel or chess. Let's talk.",
+      "Up for a good engineering problem, a role, or a game of chess. Let's talk.",
     email: "bavly@bavlifyweb.com",
     linkedin: { label: "linkedin.com/in/bavshehata", url: "https://linkedin.com/in/bavshehata" },
     github: { label: "github.com/bavshehata", url: "https://github.com/bavshehata" },

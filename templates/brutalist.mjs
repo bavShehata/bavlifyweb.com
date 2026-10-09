@@ -58,7 +58,7 @@ export function render(c) {
 
   const about = c.about.map((p) => `<p>${p}</p>`).join("");
 
-  const marquee = [...c.skills.flatMap((s) => s.items), "Padel", "Chess", "Privacy", "EndeavourOS"]
+  const marquee = [...c.skills.flatMap((s) => s.items), "Chess", "Privacy", "EndeavourOS"]
     .map((x) => `<span>${x}</span><span class="br-mq__star">&#10040;</span>`)
     .join("");
 
