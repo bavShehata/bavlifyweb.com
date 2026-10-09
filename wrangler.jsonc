@@ -1,7 +1,7 @@
 {
   // Cloudflare Workers static-assets deploy: serves the prebuilt public/ folder.
   // Build step (node build.mjs) regenerates public/, then `wrangler deploy` uploads it.
-  "name": "bavlifyweb",
+  "name": "bavlifyweb-com",
   "compatibility_date": "2026-10-09",
   "assets": {
     "directory": "./public"
