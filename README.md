@@ -23,7 +23,7 @@ public/              Build output (the deployable site)
 ## Develop
 
 ```bash
-npm install            # optional, only needed for screenshots
+npm i -D playwright    # only for screenshots (npm run shots)
 node build.mjs         # regenerate public/
 # preview:
 python -m http.server 8080 --directory public
@@ -34,11 +34,8 @@ Edit copy in `content.mjs`, then rebuild. To change the live design, change the
 
 ## Deploy
 
-Static output in `public/`. Deployed to Cloudflare Pages.
-
-```bash
-npx wrangler pages deploy public --project-name bavlifyweb
-```
+Hosted on Cloudflare Pages via GitHub integration. Every push to `main` runs
+`node build.mjs` and publishes `public/`. Custom domain: bavlifyweb.com.
 
 ## Fonts
 

@@ -10,8 +10,5 @@
   },
   "keywords": ["portfolio", "static-site"],
   "author": "Bavly Shehata",
-  "license": "MIT",
-  "devDependencies": {
-    "playwright": "^1.65.0-alpha-2026-10-07"
-  }
+  "license": "MIT"
 }
