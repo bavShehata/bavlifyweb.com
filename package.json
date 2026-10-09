@@ -1,0 +1,17 @@
+{
+  "name": "bavlifyweb",
+  "version": "1.0.0",
+  "description": "Bavly Shehata personal portfolio. Hand-built static site, no framework.",
+  "type": "module",
+  "main": "build.mjs",
+  "scripts": {
+    "build": "node build.mjs",
+    "shots": "node screenshot.mjs"
+  },
+  "keywords": ["portfolio", "static-site"],
+  "author": "Bavly Shehata",
+  "license": "MIT",
+  "devDependencies": {
+    "playwright": "^1.65.0-alpha-2026-10-07"
+  }
+}
