@@ -145,10 +145,10 @@ export function render(c, opts = {}) {
 
   /* Masthead */
   .ed-mast{border-bottom:3px double var(--line);padding-bottom:1.2rem;}
-  .ed-mast__top{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+  .ed-mast__top{display:flex;align-items:center;gap:.3rem .7rem;flex-wrap:wrap;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.35;}
   .ed-dot{width:3px;height:3px;border-radius:50%;background:currentColor;opacity:.5;}
   .ed-mast__name{font-family:"Fraunces",serif;font-optical-sizing:auto;font-weight:600;
-    font-size:clamp(3rem,11vw,7.5rem);line-height:1;letter-spacing:-.02em;margin:.5rem 0 0;padding-bottom:.06em;}
+    font-size:clamp(3rem,11vw,7.5rem);line-height:1;letter-spacing:-.02em;margin:.75rem 0 0;padding-bottom:.06em;}
   .ed-nav{display:flex;gap:1.4rem;flex-wrap:wrap;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;margin-top:1.7rem;}
   .ed-nav a{text-decoration:none;color:var(--muted);transition:color .15s;}
   .ed-nav a:hover{color:var(--accent);}
