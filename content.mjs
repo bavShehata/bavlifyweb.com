@@ -37,7 +37,7 @@ export const content = {
 
   about: [
     "I am a software engineer who likes the impactful end of the work: taking a feature from an idea to something running in production, with all the cross-functional messiness that involves. My home base is backend and distributed systems, but I follow the impact wherever it leads, which is how I ended up inside the Microsoft Edge source, where I also lead the on-device machine-learning classifier that powers its shopping features.",
-    "None of this was the plan at 15, when an introductory C++ course turned into a love of breaking problems into logical steps (a first-place robotics win did not hurt). That led to a full-ride scholarship, a 4.0 Computer Science degree, years of competitive programming, and a long stretch of full-stack freelancing before Microsoft.",
+    "None of this was the plan at 15, when an introductory C++ course turned into a love of breaking problems into logical steps (a first-place robotics win did not hurt). That led to a full-ride scholarship, a 4.0 Computer Science degree, years of competitive programming, and a long stretch of self-employed full-stack work before Microsoft.",
     "I care about how we build, not just what we build: clean, well-tested code, strong fundamentals, and AI-assisted development. I also enjoy the human side, mentoring engineers and presenting the high-impact work I get to be part of.",
   ],
 
@@ -139,7 +139,7 @@ export const content = {
     },
     {
       period: "2021 \u2014 2024",
-      role: "Full-stack Developer, Freelance",
+      role: "Full-stack Developer, Self-employed",
       org: "Bavlifyweb",
       note:
         "Delivered full-stack and low-code web projects for 20+ clients end to end, including FL0, PowerHouse SMART, and Trainline. Mentored 7 interns, built real-time integrations and automations, deployed on cloud.",
