@@ -14,7 +14,7 @@ export const content = {
   lead:
     "I build the high-scale backends behind everyday products, and ship the machine learning that makes them pay off.",
   sub:
-    "I lead the service behind affiliate links across Outlook, Microsoft Edge, and Copilot: around 140 million requests a day, about $46M a year, built hands-on with a small team.",
+    "I lead the service behind affiliate links across Outlook, Microsoft Edge, and Copilot: a high-scale backend that handles hundreds of millions of requests a day and generates tens of millions in annual revenue, built hands-on with a small team.",
 
   now:
     "Leading the affiliate service, going deeper on AI-powered developer productivity and large-scale systems, and learning Spanish.",
@@ -29,14 +29,14 @@ export const content = {
 
   // Headline numbers. Kept to the strongest four.
   metrics: [
-    { figure: "140M", label: "requests a day", sub: "peak 185M, ~50B a year" },
-    { figure: "$46M", label: "annual revenue", sub: "across 8 networks" },
+    { figure: "100M+", label: "requests a day", sub: "high-scale, low latency" },
+    { figure: "8-figure", label: "annual revenue", sub: "across multiple networks" },
     { figure: "+10%", label: "daily ad calls", sub: "from on-device ML" },
-    { figure: "0.81\u21920.92", label: "detector accuracy (F1)", sub: "in a 6.2 KB model" },
+    { figure: "+14%", label: "detection accuracy", sub: "on-device ML classifier" },
   ],
 
   about: [
-    "I am a software engineer who likes the impactful end of the work: taking a feature from an idea to something running in production, with all the cross-functional messiness that involves. My home base is backend and distributed systems, but I follow the impact wherever it leads, which is how I ended up inside the Microsoft Edge source shipping an on-device machine-learning model.",
+    "I am a software engineer who likes the impactful end of the work: taking a feature from an idea to something running in production, with all the cross-functional messiness that involves. My home base is backend and distributed systems, but I follow the impact wherever it leads, which is how I ended up inside the Microsoft Edge source, where I also lead the on-device machine-learning classifier that powers its shopping features.",
     "None of this was the plan at 15, when an introductory C++ course turned into a love of breaking problems into logical steps (a first-place robotics win did not hurt). That led to a full-ride scholarship, a 4.0 Computer Science degree, years of competitive programming, and a long stretch of full-stack freelancing before Microsoft.",
     "I care about how we build, not just what we build: clean, well-tested code, strong fundamentals, and AI-assisted development. I also enjoy the human side, mentoring engineers and presenting the high-impact work I get to be part of.",
   ],
@@ -50,9 +50,8 @@ export const content = {
       blurb:
         "Initiated and led replacing Edge's rule-based product-page detector with a single on-device machine-learning model, in the Chromium source.",
       bullets: [
-        "Lifted detection accuracy (F1) from 0.81 to 0.92 on a frozen holdout, and 0.97 on an 89K-URL production set.",
-        "Drove a 10% increase in daily ad calls (100M to 110M) by triggering Edge shopping features more accurately.",
-        "A 6.2 KB model with a single forward pass: no per-locale regexes, no live API dependency, no page scraping.",
+        "Improved detection accuracy by ~14% and drove a 10% increase in daily ad calls by triggering Edge shopping features more accurately.",
+        "A tiny on-device model (a few kilobytes) with a single forward pass: no per-locale rules, no live API dependency, no page scraping.",
         "Built the offline evaluation harness (headless tracing plus capture) and shipped the C++ serving-path gate, unit-tested and regression-clean.",
       ],
       tags: ["Logistic regression", "Feature engineering", "Model validation", "C++", "Chromium"],
@@ -64,10 +63,10 @@ export const content = {
       blurb:
         "I lead and build the service behind affiliate links across Outlook, Microsoft Edge, and Copilot.",
       bullets: [
-        "Around 140 million requests a day (peak 185M) and about $46M in annual revenue.",
-        "8 affiliate and retail networks including a direct eBay integration, with yield optimization that routes each click to the highest-paying network.",
+        "A high-scale backend that handles hundreds of millions of requests a day and generates tens of millions in annual revenue.",
+        "Integrated multiple affiliate and retail networks (including a direct eBay integration), with yield optimization that routes each click to the highest-paying network.",
         "Low-latency merchant resolution (exact, then base, then wildcard domain, ccTLD-aware) with signed redirect URLs.",
-        "Set direction and delivery with a small team of three engineers, while staying a primary builder.",
+        "Set direction and delivery with a small team, while staying a primary builder.",
       ],
       tags: [".NET", "C#", "Microservices", "Azure", "A/B experimentation"],
     },
@@ -91,9 +90,9 @@ export const content = {
       blurb:
         "Sometimes the fix is technical. Sometimes it is challenging the report everyone already trusts.",
       bullets: [
-        "Recovered about $1M in annual revenue by root-causing a production cluster outage, a partner had quietly blocked our traffic.",
-        "Broke a stalled, multi-week, all-hands incident by re-framing a mislabeled root cause, growing partner traffic about 10%.",
-        "Raised Microsoft Cashback reliability from 80% to 96%.",
+        "Recovered significant annual revenue by root-causing a production cluster outage, a partner had quietly blocked our traffic.",
+        "Broke a stalled, multi-week, all-hands incident by re-framing a mislabeled root cause, growing partner traffic ~10%.",
+        "Improved the reliability of Microsoft Cashback by ~20%.",
       ],
       tags: ["Log analysis", "Incident leadership", "Cross-team", "Observability"],
     },
@@ -136,7 +135,7 @@ export const content = {
       role: "Software Engineer II",
       org: "Microsoft, Bing Shopping",
       note:
-        "Lead the affiliate service across Outlook, Edge, and Copilot. Shipped the Edge on-device ML model, recovered about $1M in annual revenue, and championed AI-assisted development. Promoted to Software Engineer II in 2026.",
+        "Lead the affiliate service across Outlook, Edge, and Copilot, and the on-device machine-learning classifier that powers its shopping features. Recovered significant annual revenue and championed AI-assisted development. Promoted to Software Engineer II in 2026.",
     },
     {
       period: "2021 \u2014 2024",
