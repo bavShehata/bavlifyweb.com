@@ -152,6 +152,11 @@ button{font:inherit;color:inherit;cursor:pointer;}
   .mo-bg__role h4{font-size:1.25rem;font-weight:500;letter-spacing:-.01em;}
   .mo-bg__role span{font-size:.85rem;color:var(--muted);}
   .mo-bg__note{color:var(--muted);max-width:60ch;}
+  .mo-honors{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--line);}
+  .mo-honors__label{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;}
+  .mo-honors ul{display:grid;gap:.6rem;}
+  .mo-honors li{position:relative;padding-left:1.5rem;color:var(--muted);max-width:66ch;}
+  .mo-honors li::before{content:"";position:absolute;left:0;top:.6em;width:.5rem;height:1px;background:var(--accent);}
 
   .mo-contact__line{font-size:clamp(2rem,5.5vw,4rem);font-weight:500;line-height:1.05;letter-spacing:-.03em;max-width:18ch;}
   .mo-contact__links{display:grid;gap:0;margin-top:2.5rem;max-width:620px;}
@@ -313,8 +318,12 @@ button{font:inherit;color:inherit;cursor:pointer;}
       <div class="mo-bg__row">
         <div class="mo-bg__period">2023</div>
         <div class="mo-bg__role"><h4>BSc Computer Science (AI major)</h4><span>British University in Egypt</span></div>
-        <p class="mo-bg__note">4.0 GPA, distinction with honors, merit-based full-ride scholarship. President of the Competitive Programming Club. Degree project: multi-classification from facial images, 400+ models over 1,000+ GPU-hours (F1 73% age, 80% gender, 93% ethnicity).</p>
+        <p class="mo-bg__note">4.0 GPA, distinction with honors, merit-based full-ride scholarship. President of the university's ICPC (competitive programming) team. Degree project: multi-classification from facial images, 400+ models over 1,000+ GPU-hours (F1 73% age, 80% gender, 93% ethnicity).</p>
       </div></div>
+      <div class="mo-honors">
+        <p class="mo-honors__label">Earlier recognition</p>
+        <ul><li>US Embassy exchange scholarship to the Education USA Academy (University of Tennessee), one of about ten Egyptians selected.</li><li>Youngest of five students chosen to speak at a national STEM conference, covered in the national press.</li><li>NASA Space Apps Challenge: the only team from my school selected to travel and present.</li><li>First place in a local robotics competition, plus an ISEF science-fair project.</li></ul>
+      </div>
     </section>
 
     <section class="mo-section mo-contact" id="contact">

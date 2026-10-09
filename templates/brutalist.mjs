@@ -56,6 +56,8 @@ export function render(c) {
     )
     .join("");
 
+  const honors = c.honors.map((h) => `<li>${h}</li>`).join("");
+
   const about = c.about.map((p) => `<p>${p}</p>`).join("");
 
   const marquee = [...c.skills.flatMap((s) => s.items), "Chess", "Privacy", "EndeavourOS"]
@@ -109,6 +111,10 @@ export function render(c) {
     <section class="br-section" id="background">
       <h2 class="br-h2"><span>04</span> Background</h2>
       <div class="br-bg">${background}</div>
+      <div class="br-honors">
+        <h3 class="br-honors__h">Earlier recognition</h3>
+        <ul>${honors}</ul>
+      </div>
     </section>
 
     <section class="br-section" id="contact">
@@ -207,6 +213,11 @@ export function render(c) {
   .br-bg__main h4{font-size:1.25rem;font-weight:700;text-transform:uppercase;letter-spacing:-.01em;}
   .br-bg__main h4 em{font-style:normal;color:var(--muted);font-weight:400;}
   .br-bg__main p{color:var(--muted);margin-top:.4rem;max-width:68ch;}
+  .br-honors{border:2px solid var(--line);padding:1.3rem;background:var(--card);margin-top:1rem;}
+  .br-honors__h{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:.9rem;}
+  .br-honors ul{display:grid;gap:.5rem;}
+  .br-honors li{position:relative;padding-left:1.6rem;color:var(--fg);}
+  .br-honors li::before{content:"\\25A0";position:absolute;left:0;top:.3em;color:var(--accent);font-size:.7em;}
 
   .br-contact{border:2px solid var(--line);background:var(--fg);color:var(--bg);padding:clamp(1.6rem,5vw,3rem);}
   .br-contact__line{font-size:clamp(1.8rem,5vw,3.4rem);font-weight:700;text-transform:uppercase;line-height:1.02;letter-spacing:-.02em;max-width:18ch;}

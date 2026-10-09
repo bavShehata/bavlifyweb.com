@@ -55,6 +55,8 @@ export function render(c) {
     )
     .join("");
 
+  const honors = c.honors.map((h) => `<li>${h}</li>`).join("");
+
   const about = c.about.map((p) => `<p>${p}</p>`).join("");
 
   const body = `
@@ -98,6 +100,7 @@ export function render(c) {
       <section class="tm-sec" id="background">
         ${prompt("git log --oneline --career")}
         <div class="tm-commits">${background}</div>
+        <div class="tm-honors"><p class="tm-honors__h"># earlier recognition</p><ul>${honors}</ul></div>
         <p class="tm-personal">// off-hours: ${c.personal.join(", ").toLowerCase()}</p>
       </section>
 
@@ -194,6 +197,11 @@ export function render(c) {
   .tm-commit__body h4{font-size:1.05rem;font-weight:700;}
   .tm-commit__body h4 span{color:var(--muted);font-weight:400;}
   .tm-commit__body p{color:var(--muted);font-size:.88rem;margin-top:.3rem;max-width:72ch;}
+  .tm-honors{margin-top:1.2rem;}
+  .tm-honors__h{color:var(--accent);opacity:.85;font-size:.78rem;margin-bottom:.5rem;}
+  .tm-honors ul{display:grid;gap:.4rem;}
+  .tm-honors li{position:relative;padding-left:1.4rem;color:var(--muted);font-size:.88rem;}
+  .tm-honors li::before{content:"\\203a";position:absolute;left:.2rem;color:var(--accent);}
   .tm-personal{margin-top:1.3rem;color:var(--muted);opacity:.8;font-size:.82rem;}
 
   .tm-contact__line{font-size:clamp(1.1rem,2.6vw,1.5rem);max-width:40ch;margin-bottom:1.2rem;}

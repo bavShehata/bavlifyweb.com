@@ -149,8 +149,15 @@ export const content = {
       role: "BSc Computer Science (AI major)",
       org: "British University in Egypt",
       note:
-        "4.0 GPA, distinction with honors, merit-based full-ride scholarship. President of the Competitive Programming Club. Degree project: multi-classification from facial images, 400+ models over 1,000+ GPU-hours (F1 73% age, 80% gender, 93% ethnicity).",
+        "4.0 GPA, distinction with honors, merit-based full-ride scholarship. President of the university's ICPC (competitive programming) team. Degree project: multi-classification from facial images, 400+ models over 1,000+ GPU-hours (F1 73% age, 80% gender, 93% ethnicity).",
     },
+  ],
+
+  honors: [
+    "US Embassy exchange scholarship to the Education USA Academy (University of Tennessee), one of about ten Egyptians selected.",
+    "Youngest of five students chosen to speak at a national STEM conference, covered in the national press.",
+    "NASA Space Apps Challenge: the only team from my school selected to travel and present.",
+    "First place in a local robotics competition, plus an ISEF science-fair project.",
   ],
 
   personal: [

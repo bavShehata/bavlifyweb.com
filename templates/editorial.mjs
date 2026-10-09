@@ -53,6 +53,8 @@ export function render(c, opts = {}) {
     )
     .join("");
 
+  const honors = c.honors.map((h) => `<li>${h}</li>`).join("");
+
   const about = c.about.map((p) => `<p>${p}</p>`).join("");
 
   const body = `
@@ -110,6 +112,10 @@ export function render(c, opts = {}) {
     <section class="ed-section" id="background">
       <div class="ed-eyebrow"><span>&sect; 04</span> Background</div>
       <div class="ed-bg">${background}</div>
+      <div class="ed-honors">
+        <span class="ed-honors__label">Earlier recognition</span>
+        <ul>${honors}</ul>
+      </div>
     </section>
 
     <section class="ed-section ed-contact" id="contact">
@@ -124,7 +130,6 @@ export function render(c, opts = {}) {
 
     <footer class="ed-foot">
       <span>&copy; ${c.year} ${c.name}</span>
-      <span>Set in Fraunces &amp; Newsreader</span>
     </footer>
   </main>`;
 
@@ -207,6 +212,11 @@ export function render(c, opts = {}) {
   .ed-bg__main h4{font-family:"Fraunces",serif;font-weight:560;font-size:1.35rem;}
   .ed-bg__main h4 span{color:var(--muted);font-weight:400;}
   .ed-bg__main p{color:var(--muted);margin-top:.35rem;max-width:68ch;}
+  .ed-honors{margin-top:1.8rem;padding-top:1.4rem;border-top:1px solid var(--line);}
+  .ed-honors__label{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);}
+  .ed-honors ul{margin-top:.9rem;display:grid;gap:.55rem;}
+  .ed-honors li{position:relative;padding-left:1.5rem;color:var(--muted);max-width:70ch;}
+  .ed-honors li::before{content:"\\2726";position:absolute;left:0;top:.15em;color:var(--accent);font-size:.85em;}
 
   /* Contact */
   .ed-contact__line{font-family:"Fraunces",serif;font-weight:420;font-size:clamp(1.8rem,4.5vw,3rem);line-height:1.1;letter-spacing:-.015em;max-width:20ch;}

@@ -52,6 +52,8 @@ export function render(c) {
     )
     .join("");
 
+  const honors = c.honors.map((h) => `<li>${h}</li>`).join("");
+
   const about = c.about.map((p) => `<p>${p}</p>`).join("");
 
   const sectionLabel = (n, t) =>
@@ -101,6 +103,10 @@ export function render(c) {
     <section class="mo-section" id="background">
       ${sectionLabel("004", "Background")}
       <div class="mo-bg">${background}</div>
+      <div class="mo-honors">
+        <p class="mo-honors__label">Earlier recognition</p>
+        <ul>${honors}</ul>
+      </div>
     </section>
 
     <section class="mo-section mo-contact" id="contact">
@@ -183,6 +189,11 @@ export function render(c) {
   .mo-bg__role h4{font-size:1.25rem;font-weight:500;letter-spacing:-.01em;}
   .mo-bg__role span{font-size:.85rem;color:var(--muted);}
   .mo-bg__note{color:var(--muted);max-width:60ch;}
+  .mo-honors{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--line);}
+  .mo-honors__label{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;}
+  .mo-honors ul{display:grid;gap:.6rem;}
+  .mo-honors li{position:relative;padding-left:1.5rem;color:var(--muted);max-width:66ch;}
+  .mo-honors li::before{content:"";position:absolute;left:0;top:.6em;width:.5rem;height:1px;background:var(--accent);}
 
   .mo-contact__line{font-size:clamp(2rem,5.5vw,4rem);font-weight:500;line-height:1.05;letter-spacing:-.03em;max-width:18ch;}
   .mo-contact__links{display:grid;gap:0;margin-top:2.5rem;max-width:620px;}
